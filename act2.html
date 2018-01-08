@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+    <script type="text/javascript" src="js.js">
+
+    </script>
+    <title>Calculadora</title>
+  </head>
+  <body>
+
+    <div id="calculadora">
+
+
+<div class="fondo">
+
+
+    <div class="todo">
+      <div id="pantalla"></div>
+       <div class="0fil">
+         <input type="button" name="" value="c" onclick="borrartodo()">
+         <input type="button" name="" value="c#" onclick="borrarUltimo(pantalla.innerHTML)">
+       </div>
+
+    <div class="1fil">
+      <input type="button" name="" value="1" onclick="numero(1)">
+      <input type="button" name="" value="2" onclick="numero(2)" >
+      <input type="button" name="" value="3" onclick="numero(3)">
+      <input type="button" name="" value="+" onclick="numero('+')" >
+
+    </div>
+    <div class="2fil">
+      <input type="button" name="" value="4" onclick="numero(4)" >
+      <input type="button" name="" value="5" onclick="numero(5)" >
+      <input type="button" name="" value="6" onclick="numero(6)" >
+      <input type="button" name="" value="*" onclick="numero('*')" >
+    </div>
+    <div class="3fil">
+      <input type="button" name="" value="7" onclick="numero(7)" >
+      <input type="button" name="" value="8" onclick="numero(8)" >
+      <input type="button" name="" value="9" onclick="numero(9)" >
+      <input type="button" name="" value="π" onclick="numero(Math.PI)">
+
+    </div>
+    <div class="signos">
+      <input type="button" name="" value="0" onclick="numero(0)">
+      <input type="button" id="igual" name="" value="=" onclick="calcular(pantalla.innerHTML)">
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+  </body>
+
+</html>
